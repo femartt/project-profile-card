@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  width: 98vw;
+  height: 100vh;
+
+  background: url(project-profile-card/files/bg.png);
+  margin: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: #fff;
+  width: 1098px;
+  height: 544px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 0px;
+
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px #464646;
+}
+
+.content img {
+  margin: 42px 40px 0 0;
+}
+
+.content h1 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #141843;
+  margin: 86px 0 0 0;
+}
+
+.content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #5f627a;
+  margin: 0;
+}
+
+.conteudo > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #141843;
+  width: 80%;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px; /* Espaçamento horizontal entre os blocos */
+  margin: 0 0 43px 0;
+}
+
+.numbers div {
+  text-align: center; /* Centraliza o texto em cada bloco */
+  position: relative; /* Necessário para os divisores */
+}
+
+.numbers div:not(:last-child)::after {
+  content: ""; /* Adiciona o divisor */
+  position: absolute;
+  right: -20px; /* Ajuste a distância entre o divisor e o texto */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px; /* Altura do divisor */
+  background-color: #e0e0e0; /* Cor do divisor */
+}
+
+.numbers p:first-child {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #141843;
+  margin: 0;
+}
+
+.numbers p:last-child {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #5f627a;
+  margin: 0;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.follow {
+  width: 160px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #aef1f5;
+  color: #141843;
+  text-decoration: none;
+  border: 1px solid #141843;
+  border-radius: 10px;
+}
+
+.profile {
+  width: 160px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #ffddb6;
+  color: #141843;
+  text-decoration: none;
+  border: 1px solid #141843;
+  border-radius: 10px;
+}
+
+.follow:hover {
+  background-color: #141843;
+  border: 1px solid orangered;
+  color: #fff;
+}
+
+.profile:hover {
+  background-color: #141843;
+  border: 1px solid orangered;
+  color: #fff;
+}
